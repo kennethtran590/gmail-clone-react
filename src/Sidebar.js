@@ -4,6 +4,12 @@ import "./Sidebar.css";
 import AddIcon from "@mui/icons-material/Add";
 import InboxIcon from "@mui/icons-material/Inbox";
 import SidebarOption from "./SidebarOption";
+import StarIcon from "@mui/icons-material/Star";
+import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import SendIcon from "@mui/icons-material/Send";
+import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
+import DeleteIcon from "@mui/icons-material/Delete";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function Sidebar() {
   return (
@@ -15,7 +21,18 @@ function Sidebar() {
       >
         Compose
       </Button>
-      <SidebarOption Icon={InboxIcon} title="Inbox" number={54} />
+      <SidebarOption
+        Icon={InboxIcon}
+        title="Inbox"
+        number={54}
+        selected={true}
+      />
+      <SidebarOption Icon={StarIcon} title="Starred" number={54} />
+      <SidebarOption Icon={WatchLaterIcon} title="Snooze" number={54} />
+      <SidebarOption Icon={SendIcon} title="Sent" number={54} />
+      <SidebarOption Icon={InsertDriveFileIcon} title="Drafts" number={54} />
+      <SidebarOption Icon={DeleteIcon} title="Trash" number={54} />
+      <SidebarOption Icon={ExpandMoreIcon} />
     </div>
   );
 }
