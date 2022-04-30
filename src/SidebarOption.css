@@ -11,7 +11,10 @@
 
 .sidebarOption:hover,
 .sidebarOption:hover > p,
-.sidebarOption:hover > h3 {
+.sidebarOption:hover > h3,
+.sidebarOption--active,
+.sidebarOption--active > p,
+.sidebarOption--active > h3 {
   background-color: #fcecec;
   color: #c04b37;
   font-weight: 800 !important;
@@ -30,14 +33,9 @@
 
 .sidebarOption > p {
   display: none;
-  font-weight: 300;
+  font-weight: 800;
 }
 
-.sidebarOption--active {
-  background-color: #fcecec;
-  color: #c04b37;
-  font-weight: 800 !important;
-}
 .sidebarOption--active > p {
   display: inline !important;
 }
