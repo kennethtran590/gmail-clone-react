@@ -3,6 +3,8 @@ import "./App.css";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Mail from "./Mail";
+import EmailList from "./EmailList";
 
 function App() {
   return (
@@ -11,7 +13,10 @@ function App() {
         <Header />
         <div className="app__body">
           <Sidebar />
-          <Routes></Routes>
+          <Routes>
+            <Route path="/mail" element={<Mail />} />
+            <Route path="/" element={<EmailList />} />
+          </Routes>
         </div>
       </div>
     </Router>
