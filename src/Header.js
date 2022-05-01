@@ -33,7 +33,9 @@ function Header() {
         <IconButton>
           <NotificationsIcon />
         </IconButton>
-        <Avatar />
+        <div className="header__right__avatar">
+          <Avatar />
+        </div>
       </div>
     </div>
   );
