@@ -8,7 +8,7 @@ function Section({ Icon, title, color, selected }) {
   };
 
   return (
-    <div style={divStyle}>
+    <div style={divStyle} className="section">
       <Icon />
       <h4>{title}</h4>
     </div>
