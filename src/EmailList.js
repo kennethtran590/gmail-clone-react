@@ -12,7 +12,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 function EmailList() {
   return (
     <div className="emailList">
-      <div className="emailList_settings">
+      <div className="emailList__settings">
         <div className="emailList__settingsLeft">
           <Checkbox />
           <IconButton>
@@ -25,6 +25,7 @@ function EmailList() {
             <MoreVertIcon />
           </IconButton>
         </div>
+
         <div className="emailList__settingsRight">
           <IconButton>
             <ChevronLeftIcon />
@@ -39,6 +40,8 @@ function EmailList() {
             <SettingsIcon />
           </IconButton>
         </div>
+
+        <div className="emailList__sections"></div>
       </div>
     </div>
   );
