@@ -1,6 +1,6 @@
 import React from "react";
 import "./EmailRow.css";
-function EmailRow() {
+function EmailRow({ id, title, subject, description, time }) {
   return <div className="emailRow"></div>;
 }
 

@@ -50,6 +50,8 @@ function EmailList() {
         <Section Icon={PeopleIcon} title="Social" color="#1A73E8" />
         <Section Icon={LocalOfferIcon} title="Promotions" color="green" />
       </div>
+
+      <div className="emailList__list"></div>
     </div>
   );
 }
