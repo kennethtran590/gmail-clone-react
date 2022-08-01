@@ -54,8 +54,8 @@ function EmailList() {
 
       <div className="emailList__list">
         <EmailRow
-          title="Twitch"
-          subject="Hey fellow streamer!"
+          title="Thanks for subscribing"
+          subject="Hey new subscriber!"
           description="This is a test"
           time="10pm"
         />
